@@ -1,4 +1,4 @@
-CREATE DATABASE roleplus;
+CREATE DATABASE IF NOT EXISTS roleplus;
 
 USE roleplus;
 
