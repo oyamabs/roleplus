@@ -1,0 +1,27 @@
+@import "./global.scss";
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  align-items: center;
+
+  color: #fff;
+  background: $primary-gradient;
+
+  h1 {
+    margin-left: 5px;
+  }
+
+  a {
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 120%;
+  }
+
+  margin-bottom: 5px;
+}
