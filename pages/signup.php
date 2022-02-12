@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/header.css" />
     <link rel="stylesheet" href="../dist/forms.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/rplus_logo.png" />
     <title>Role +</title>
 </head>
 <body>
@@ -31,14 +32,16 @@
     </header>
     <main>
     <div class="centered-form">
-        <form action="/signinaction" method="post">
-            <input class="text-input" type="text" placeholder="Username" name="username" require /> <br>
-            <input class="text-input" type="password" placeholder="Password" name="password" require /> <br>
+        <form method="post">
+            <input class="text-input" id="username" type="text" placeholder="Username" name="username" require /> <br>
+            <input class="text-input" id="password" type="password" placeholder="Password" name="password" require /> <br>
+            <input class="text-input" id="password-confirm" type="password" placeholder="Confirm Password" require /> <br>
             <input class="button" type="submit" />
+            <p>Already have an account ? Click <a href="/signin">here !</a></p>
         </form>
-        <p>Don't have an account yet ? Click <a href="/signup">here !</a></p>
     </div>
     </main>
     <footer></footer>
+    <script src="../assets/js/signup_form_verification.js"></script>
 </body>
 </html>

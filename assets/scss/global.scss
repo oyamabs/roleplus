@@ -1,4 +1,4 @@
-$primary-color: #544179;
+$primary-color: rgba(88,21,190,1);
 
 $primary-gradient: linear-gradient(39deg, rgba(88,21,190,1) 0%, rgba(193,0,213,1) 100%); // linear-gradient(39deg, rgba(121,32,255,1) 0%, rgba(231,0,255,1) 100%);
 
@@ -11,4 +11,12 @@ body {
     font-family: "OpenSans-Regular", sans-serif;
     margin: 0;
     padding: 0;
+}
+header {
+    height: 10vh;
+}
+
+main {
+    height: 90vh;
+    //border: 1px solid black;
 }

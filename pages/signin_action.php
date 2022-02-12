@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $username = $_POST['username']; // ref to $_POST['username'] cuz i'm lazy
     $passwordhash = hash('sha512', $_POST['password']);
     
@@ -26,12 +27,12 @@
         $sessionvar = base64_encode($username . ":" . $passwordhash);
         $_SESSION['session_id'] = $sessionvar;
         echo "Redirecting... If you're not redirected, click <a href='/'>here</a>";
-        header("Location: " . $_SERVER['SERVER_NAME'] . "/"); // redirect to http://rplus.website.com/
+        header("Location: /"); // redirect to http://rplus.website.com/
     }
     else { // if account is not found just redirect to the home page
         echo "Redirecting... If you're not redirected, click <a href='/'>here</a>";
         sleep(2);
-        header("Location: " . $_SERVER['SERVER_NAME'] . "/");   
+        header("Location: /");   
     }
     
 ?>

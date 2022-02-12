@@ -1,8 +1,9 @@
 <?php
+    session_start();
     $linkHref = "/signin";
     $linkLabel = "Sign In";
     // check if the user is connected or not
-    if (isset($_SESSION['account'])) {
+    if (isset($_SESSION['session_id'])) {
         $linkHref = "/profile";
         $linkLabel = "Profile";
     }

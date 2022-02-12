@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+body {
+  font-family: "OpenSans-Regular", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  height: 90vh;
+}
+
+.centered-form {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.centered-form form {
+  margin: auto;
+}
+
+.text-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #5815be solid 1px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.text-input:focus {
+  transition: 0.1s ease-in-out;
+  outline: 0;
+  border-bottom: #5815be solid 2px;
+  border-radius: 2px;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 25px;
+  font-weight: bold;
+  background: linear-gradient(39deg, #5815be, #c100d5, #c100d5, #5815be);
+  background-size: 300%;
+  background-position: left;
+  transition: ease-in-out background-position 0.2s;
+}
+.button:hover {
+  background-position: right;
+}
+
+/*# sourceMappingURL=forms.css.map */

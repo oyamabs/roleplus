@@ -9,13 +9,21 @@ body {
 }
 
 header {
+  height: 10vh;
+}
+
+main {
+  height: 90vh;
+  border: 1px solid black;
+}
+
+header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   background: linear-gradient(39deg, #5815be 0%, #c100d5 100%);
-  margin-bottom: 5px;
 }
 header h1 {
   margin-left: 5px;

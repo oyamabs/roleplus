@@ -13,6 +13,9 @@ switch ($request) {
     case '/signin':
         require __DIR__ . '/' . $foldername . '/signin.php';
         break;
+    case '/signup':
+        require __DIR__ . '/' . $foldername . '/signup.php';
+        break;
     case '/signinaction':
         require __DIR__ . '/' . $foldername . '/signin_action.php';
         break;
