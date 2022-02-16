@@ -19,6 +19,9 @@ switch ($request) {
     case '/signinaction':
         require __DIR__ . '/' . $foldername . '/signin_action.php';
         break;
+    case '/signupaction':
+        require __DIR__ . '/' . $foldername . '/signup_action.php';
+        break;
     default:
         http_response_code(404);
         require __DIR__ . '/' . $foldername . '/404.php';

@@ -35,8 +35,8 @@
             <input class="text-input" type="text" placeholder="Username" name="username" require /> <br>
             <input class="text-input" type="password" placeholder="Password" name="password" require /> <br>
             <input class="button" type="submit" />
+            <p>Don't have an account yet ? Click <a href="/signup">here !</a></p>
         </form>
-        <p>Don't have an account yet ? Click <a href="/signup">here !</a></p>
     </div>
     </main>
     <footer></footer>

@@ -10,7 +10,7 @@
     try {
         $pdo = new PDO("mysql:host={$mysql_uri};port=3306;dbname=roleplus", $mysql_user, $mysql_password);
     } catch (PDOException $e) {
-        echo "Errovr: " . $e->getMessage() . "<br>";
+        echo "Error: " . $e->getMessage() . "<br>";
         die();
     }
 
@@ -20,6 +20,7 @@
     $prepare->execute();
 
     $rows = $prepare->fetch(); // get the returned list of the database
+    
 
     // if an account is found we create a session variable for the account and redirect to the home page
     if ($prepare->rowCount() > 0) {
@@ -32,7 +33,7 @@
     else { // if account is not found just redirect to the home page
         echo "Redirecting... If you're not redirected, click <a href='/'>here</a>";
         sleep(2);
-        header("Location: /");   
+        header("Location: /");
     }
     
 ?>

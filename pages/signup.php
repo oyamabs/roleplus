@@ -32,11 +32,11 @@
     </header>
     <main>
     <div class="centered-form">
-        <form method="post">
-            <input class="text-input" id="username" type="text" placeholder="Username" name="username" require /> <br>
-            <input class="text-input" id="password" type="password" placeholder="Password" name="password" require /> <br>
-            <input class="text-input" id="password-confirm" type="password" placeholder="Confirm Password" require /> <br>
-            <input class="button" type="submit" />
+        <form method="post" action="/signupaction" onsubmit="return validateSignUp()">
+            <input class="text-input" type="text" placeholder="Username" name="username" required /> <br>
+            <input class="text-input" type="password" placeholder="Password" name="password" required /> <br>
+            <input class="text-input" type="password" placeholder="Confirm Password" name="password-confirm" /> <br>
+            <input class="button" type="submit" id="submit" />
             <p>Already have an account ? Click <a href="/signin">here !</a></p>
         </form>
     </div>

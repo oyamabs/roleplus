@@ -2,6 +2,6 @@
 
     $mysql_user = "root";
     $mysql_password = "";
-    $mysql_uri = "localhost";
+    $mysql_uri = "127.0.0.1";
 
 ?>
